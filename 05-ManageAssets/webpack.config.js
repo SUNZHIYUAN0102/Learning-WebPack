@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
     entry: './src/index.js',
@@ -11,7 +13,7 @@ module.exports = {
         assetModuleFilename: 'images/[contenthash][ext]'
     },
 
-    mode: 'development',
+    mode: 'production',
 
     devtool: 'inline-source-map',
 
@@ -20,6 +22,10 @@ module.exports = {
             template: './index.html',
             filename: 'app.html',
             inject: 'body'
+        }),
+
+        new MiniCssExtractPlugin({
+            filename: 'styles/[contenthash].css'
         })
     ],
 
@@ -50,7 +56,11 @@ module.exports = {
             }
         }, {
             test: /\.(css|less)$/,
-            use: ['style-loader', 'css-loader', 'less-loader']
+            use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
         }]
+    },
+
+    optimization: {
+        minimizer: [new CssMinimizerPlugin(), ]
     }
 }
