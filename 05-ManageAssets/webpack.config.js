@@ -57,6 +57,9 @@ module.exports = {
         }, {
             test: /\.(css|less)$/,
             use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+        }, {
+            test: /\.(woff|woff2|eot|ttf|otf)$/,
+            type: 'asset/resource'
         }]
     },
 
