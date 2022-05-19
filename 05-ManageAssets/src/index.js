@@ -19,6 +19,9 @@ document.body.appendChild(img2)
 
 const txt = document.createElement('div')
 txt.innerText = exampleTxt
+txt.style.width = "200px"
+txt.style.height = "200px"
+txt.classList.add('block-bg')
 document.body.appendChild(txt)
 
 const img3 = document.createElement('img')

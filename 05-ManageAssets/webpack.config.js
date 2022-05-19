@@ -13,7 +13,7 @@ module.exports = {
         assetModuleFilename: 'images/[contenthash][ext]'
     },
 
-    mode: 'production',
+    mode: 'development',
 
     devtool: 'inline-source-map',
 

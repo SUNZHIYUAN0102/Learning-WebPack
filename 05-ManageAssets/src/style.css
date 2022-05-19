@@ -1,3 +1,7 @@
 .hello {
     background-color: #f9efd4;
 }
+
+.block-bg {
+    background-image: url(./asset/resource/grooming-1801287.svg) !important;
+}
