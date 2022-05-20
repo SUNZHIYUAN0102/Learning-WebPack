@@ -7,6 +7,9 @@ import './style.css'
 import './style.less'
 import Data from './asset/resource/data.xml'
 import Notes from './asset/resource/data.csv'
+import toml from './asset/resource/data.toml'
+import yaml from './asset/resource/data.yaml'
+import json5 from './asset/resource/data.json5'
 
 HelloWorld()
 
@@ -42,3 +45,7 @@ document.body.appendChild(span)
 
 console.log(Data);
 console.log(Notes);
+
+console.log(toml);
+console.log(yaml);
+console.log(json5);
