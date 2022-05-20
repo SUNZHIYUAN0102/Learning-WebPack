@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('./asset/resource/iconfont.ttf') format('truetype');
+}
+
+.icon {
+    font-family: 'iconfont';
+    font-size: 30px;
+}
+
+.hello {
+    background-color: #f9efd4;
+}
+
+.block-bg {
+    background-image: url(./asset/resource/grooming-1801287.svg) !important;
+}

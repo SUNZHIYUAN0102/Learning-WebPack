@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/SUNZHIYUAN0102/Learning-WebPack#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
     "csv-loader": "^3.0.3",
